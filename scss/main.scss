@@ -1,0 +1,195 @@
+@import "functions";/* file: _functions.scss, must be attached first*/
+@import "variables";
+@import "mixins";
+
+header.container-fluid,
+main.container-fluid {
+	padding-right: 0;
+	padding-left: 0;
+}
+.heading{
+		h2{
+			text-decoration: underline;
+		}
+		padding-bottom: 50px;
+	}
+section#section1 {
+	padding-top: 80px;
+	padding-bottom: 50px;
+	background: url('../img/intro-bg2.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	@include xs-screens {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	div#intro{
+		font-size: 22px;
+		color: $blue-marine;
+		h1{
+			font-weight: bold;
+			text-align: center;
+		}
+		p{
+			font-weight: bold;
+			text-indent: 30px;
+		}
+	}
+}
+section#section2 {
+	background-color: #fff;
+	color: $blue-marine;
+	padding-top: 50px;
+	padding-bottom: 80px;	
+	div.container{
+		div.row{
+			@include xs-screens {
+				padding-left: 100px;
+				padding-right: 100px;
+			}
+			@include small-xs-screens {
+				padding-left: 20px;
+				padding-right: 20px;
+			}
+			div.skill{
+				background-color: $blue-marine;
+				color: #fff;
+				min-height: 100px;
+				border: 2px solid #fff;
+				border-radius: 5%;
+				cursor: pointer;
+				&:hover {
+					background-color: darken($blue-marine, 5%);
+				}
+				@include sm-screens {
+					text-align: center;
+				}
+			}
+			div.round{
+				border-radius: 50%;
+				text-align: center;
+				@include xs-screens {
+					border-radius: 5%;
+				}
+			}
+		}
+	}				
+}
+section#section3 {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: #c0c1c6;
+	background: url('../img/section3background.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	div.heading{
+		color: $blue-marine;
+		h2{
+				text-decoration: underline;
+		}
+		padding-bottom: 50px;
+	}
+	div#myProjects {
+		
+	}
+}
+section#section4 {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	color: $blue-marine;
+	div.history{
+		font-size: 16px;
+	}
+}
+.indent{
+	text-indent: 40px;
+}
+footer {
+	background-color: $blue-marine;
+	padding-top: 70px;
+	padding-bottom: 70px;
+	div#top-footer {
+		.diamond{
+      margin-left: 200px;
+      width:300px;
+      height:300px;
+      background:#fff;
+      transform:rotate(45deg);
+      -ms-transform:rotate(45deg);
+      -webkit-transform:rotate(45deg);
+      position:relative;
+      @include xs-screens {
+      	width:200px;
+      	height:200px;
+      	margin-left: 100px;
+      }
+      @include small-xs-screens {
+      	margin-left: 40px;
+      }
+      .diamond-inner{
+	      color:$blue-marine;
+	      font-weight:bold;
+	      font-size:1.2em;
+	      line-height:1.4em;
+	      text-align:center;
+	      transform:rotate(-45deg);
+	      -ms-transform:rotate(-45deg);
+	      -webkit-transform:rotate(-45deg);
+	      position:absolute;
+	      top:80px;
+	      left:20px;
+	      p{
+	      	a{
+	      		color: $blue-marine;
+	      		text-decoration: none;
+	      		&:hover{
+	      			color: darken($blue-marine, 10%);
+	      		}
+	      	}
+	      }
+	      
+	      @include xs-screens {
+	      	
+	      	top:20px;
+	      	left:-5px;
+	      }
+	    }
+    }
+	    
+	}
+}
+div#bottom-footer {
+	padding-top: 10px;
+	color: $blue-marine;
+}
+
+/* styling the JS jquery animations etc.*/
+div.back-to-top {  background: none; 
+        margin: 0; 
+        position: fixed;
+        bottom: 5%;
+        right: 10%;
+        width: 50px;
+        height: 50px;
+        z-index: 100;
+        display: none;
+        text-decoration: none;        
+        background-color: #f4f4f4; 
+        font-size: 30px; 
+        padding-left:15px;
+        opacity: .8;
+
+}
+
+/* Tooltip -----------------------------------------------*/
+.tooltip{display: inline-block; width: 120px;}
+div.back-to-top a + .tooltip > .tooltip-inner {
+      background-color: #6ec5ea; 
+      color: $blue-marine;  
+      padding: 5px;
+      font-size: 14px;
+}
+div.back-to-top a + .tooltip.top > .tooltip-arrow {
+      border-top: 5px solid $blue-marine;
+}
+/*-----------------------------------------------*/

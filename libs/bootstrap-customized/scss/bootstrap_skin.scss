@@ -1,0 +1,43 @@
+@import "functions";/* file: _functions.scss, must be attached first*/
+@import "variables";
+@import "mixins";
+
+.navbar-inverse{
+	background-color: #222;
+	border-color: #080808;
+}
+.navbar {
+    border-radius: 0;
+    margin-bottom: 0;
+    border: none;
+    font-size: 18px;
+    .navbar-header{
+    	.navbar-brand{
+    		@include small-xs-screens {
+					display: none;
+    		}
+    	}
+    }
+}
+.modal {
+	color: #124259;
+}
+.carousel-caption{
+	.btn-blue-round{
+		color: #fff;
+		background-color: #124259;
+		border-radius: 50%;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		&:hover {
+			background-color: darken(#124259, 5%);
+		}
+	}	
+}
+blockquote {
+		color: #124259;
+    padding: 10px 20px;
+    margin: 0 0 20px;
+    font-size: 14px;
+    border-left: 5px solid #eaeaea;
+}
