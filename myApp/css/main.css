@@ -37,7 +37,7 @@ h3.results {
 /*==================================*/
 /* Main view styling css:*/
 section#sectionApp {
-  background-image: url("../img/globalmap.png"); }
+  background-image: url("img/globalmap.png"); }
   @media only screen and (max-width: 480px) {
     section#sectionApp div.container div.row h1 {
       font-size: 2em; } }
