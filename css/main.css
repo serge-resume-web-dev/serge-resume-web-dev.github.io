@@ -132,7 +132,7 @@ div#bottom-footer {
   color: #124259; }
 
 /* Modals CSS:*/
-section#sectionApp {
+div#angularJs {
   background-image: url("../img/globalmap3.png");
   background-size: cover;
   background-repeat: no-repeat; }
