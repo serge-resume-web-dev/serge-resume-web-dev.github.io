@@ -1,0 +1,27 @@
+<form class="form" name="greetingForm" 
+				novalidate 
+				ng-submit="startTest(selectedTest)">
+					<legend>Please, enter your name and select the test</legend>
+					<div class="form-group">
+						<label for="name" class="control-label">Name:</label>
+						<input type="text" name="name" required ng-model="pageOne.name" class="form-control">
+						<span ng-show="greetingForm.name.$error.required" class="error">
+							Required field
+						</span>
+					</div>
+					<div class="form-group" ng-show="pageOne.name">
+						<h3>{{pageOne.name}} , select your test: </h3>
+						<select class="form-control" 
+										ng-model="selectedTest"
+										ng-options = "item.category as item.category for item in test "
+										required>
+							
+						</select>
+					</div>
+					<button class="btn btn-primary btn-block"
+									type="submit" 
+									ng-disabled = "greetingForm.$invalid"
+									ng-show="pageOne.name">
+						Proceed to test
+					</button>
+				</form>

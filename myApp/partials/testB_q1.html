@@ -1,0 +1,42 @@
+
+<div class="progress">
+	<div class="progress-bar" ng-style="{width:({{getPercentage}} + '%') }"></div>
+</div>
+<form class="form" name="testB_form">
+	<legend>Question 1: {{test[1].question1}} </legend>
+	<div class="row">
+		<div class="radio col-sm-6 text-center">
+			<label class="btn btn-warning">
+				<input type="radio" name="answer" value="{{test[1].answer1_a}}" ng-model="answer1" required>
+				{{test[1].answer1_a}} 
+			</label>
+		</div>
+		<div class="radio col-sm-6 text-center">
+			<label class="btn btn-warning">
+				<input type="radio" name="answer" value="{{test[1].answer1_b}}" ng-model="answer1" required>
+				{{test[1].answer1_b}} 
+			</label>
+		</div>
+	</div>
+	<div class="row">
+		<div class="radio col-sm-6 text-center">
+			<label class="btn btn-warning">
+				<input type="radio" name="answer" value="{{test[1].answer1_c}}" ng-model="answer1" required>
+				{{test[1].answer1_c}} 
+			</label>
+		</div>
+		<div class="radio col-sm-6 text-center">
+			<label class="btn btn-warning">
+				<input type="radio" name="answer" value="{{test[1].answer1_d}}" ng-model="answer1" required>
+				{{test[1].answer1_d}} 
+			</label>
+		</div>
+	</div>
+	<div class="checkAnswerBtn">
+		<button class="btn btn-primary btn-block checkAnswerBtn"
+					ng-click="checkAnswer1(1, 'testB', answer1)"
+					ng-disabled = "testB_form.$invalid">
+		Confirm answer
+		</button>
+	</div>						
+</form>

@@ -1,0 +1,62 @@
+@import "functions";/* file: _functions.scss, must be attached first*/
+@import "variables";
+@import "mixins";
+/*================================*/
+/*===== partial views styling css:*/
+.error {color: red; font-weight: bold;}
+.radio+.radio { margin-top: 10px;}
+div.checkAnswerBtn {margin-top: 20px;}
+
+label.btn-warning{ 
+	padding: 5px 25px; 
+	@include xs-screens {
+		width: 70%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	@include small-xs-screens {
+		width: 100%;
+	}
+}
+h2.partials{
+	font-size: 1.6em;
+	@include small-xs-screens {
+		font-size: 1em;
+	}							
+}
+h3.results {
+	font-size: 1.4em;
+	@include small-xs-screens {
+		font-size: 1.3em;
+	}
+}
+/*==================================*/
+
+/* Main view styling css:*/
+section#sectionApp {
+	div.container{
+		div.row{
+			h1{
+				@include small-xs-screens {
+					font-size: 2em;
+				}
+			}
+			div#viewFrame {
+				form#greetingForm {
+					h2 { font-size: 1.6em;
+								@include small-xs-screens {
+									font-size: 1.2em;
+								}
+					}
+					div.form-group{
+						h3{font-size: 1.5em;
+								@include small-xs-screens {
+									font-size: 1em;
+								}							
+						}
+					}
+				}
+			}
+		}
+	}
+}
