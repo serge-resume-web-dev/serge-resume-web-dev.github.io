@@ -164,7 +164,10 @@ div#bottom-footer {
 }
 /* Modals CSS:*/
 div#angularJs {
-	background-image: url("../img/globalmap.png");
+	div.modal-body{
+		background-image: url("../img/globalmap.png");
+	}
+	
 }
 
 
