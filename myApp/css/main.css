@@ -50,4 +50,7 @@ section#sectionApp div.container div.row div#viewFrame form#greetingForm div.for
     section#sectionApp div.container div.row div#viewFrame form#greetingForm div.form-group h3 {
       font-size: 1em; } }
 
+div#angularJs {
+  background-image: url("img/globalmap.png"); }
+
 /*# sourceMappingURL=main.css.map */
