@@ -132,9 +132,6 @@ div#bottom-footer {
   color: #124259; }
 
 /* Modals CSS:*/
-section#sectionApp {
-  background-image: url("../img/globalmap.png"); }
-
 /* styling the JS jquery animations etc.*/
 div.back-to-top {
   background: none;
