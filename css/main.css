@@ -135,7 +135,8 @@ div#bottom-footer {
 section#sectionApp {
   background-image: url("../img/globalmap2.png");
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  opacity: .7; }
 
 /* styling the JS jquery animations etc.*/
 div.back-to-top {
