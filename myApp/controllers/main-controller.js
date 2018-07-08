@@ -1,5 +1,5 @@
 angular.module("testApp")
-	.constant("testsDataUrl", "https://github.com/serge-resume-web-dev/serge-resume-web-dev.github.io/master/myApp/app-data/tests.json")
+	.constant("testsDataUrl", "https://github.com/serge-resume-web-dev/serge-resume-web-dev.github.io/myApp/app-data/tests.json")
 	.controller("mainCtrl", function ($scope, testsDataUrl, $http) {
 
 	$scope.test = [] ;	
