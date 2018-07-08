@@ -134,7 +134,7 @@ div#bottom-footer {
 /* Modals CSS:*/
 section#sectionApp {
   background-image: url("../img/globalmap3.png");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat; }
 
 /* styling the JS jquery animations etc.*/
