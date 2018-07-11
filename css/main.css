@@ -128,6 +128,8 @@ footer {
           left: -5px; } }
   footer div#top-footer div.contactMe form#gform h3, footer div#top-footer div.contactMe form#gform label {
     color: #fff; }
+  footer div#top-footer div.contactMe form#gform button {
+    color: #124259; }
   footer div#top-footer div.contactMe div#thankyou_message h3 {
     color: #fff; }
 
