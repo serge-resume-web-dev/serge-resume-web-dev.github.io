@@ -108,6 +108,10 @@ footer {
 	background-color: $blue-marine;
 	padding-top: 70px;
 	padding-bottom: 70px;
+	@include sm-screens {
+		padding-top: 10px;
+		padding-bottom: 20px;
+	}
 	div#top-footer {
 		.diamond{
       margin-left: 200px;
@@ -118,14 +122,10 @@ footer {
       -ms-transform:rotate(45deg);
       -webkit-transform:rotate(45deg);
       position:relative;
-      @include xs-screens {
-      	width:200px;
-      	height:200px;
-      	margin-left: 100px;
+      @include sm-screens {
+      	display: none;
       }
-      @include small-xs-screens {
-      	margin-left: 40px;
-      }
+      
       .diamond-inner{
 	      color:$blue-marine;
 	      font-weight:bold;
@@ -148,7 +148,7 @@ footer {
 	      	}
 	      }
 	      
-	      @include xs-screens {
+	      @include sm-screens {
 	      	
 	      	top:20px;
 	      	left:-5px;
@@ -156,6 +156,15 @@ footer {
 	    }
     }
     div.contactMe {
+    	@include sm-screens {
+    		padding: 10px 100px;
+    	}
+    	@include xs-screens {
+    		padding: 0px 50px;
+    	}
+    	@include small-xs-screens {
+    		padding: 0px 10px;
+    	}
     	form#gform{
 				h3,label{color: #fff;}
 				button{color: $blue-marine;}
