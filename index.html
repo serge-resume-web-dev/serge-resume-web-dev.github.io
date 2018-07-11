@@ -243,13 +243,32 @@
 <footer class="container-fluid">
 	<div id="top-footer">
 		<div class="row">
-			<div class="col-xs-12 diamond">
+			<div class="col-xs-6 diamond">
 				<div class="diamond-inner" id="contact">
 					<h3>Get in touch:</h3>
 					<p><span class="fa fa-envelope"></span>&nbsp;<a href="mailto:sergei291975@yahoo.fr" id="mail"> sergei291975@yahoo.fr</a></p>
 					
 					<p><span class="fa fa-phone"></span>&nbsp;<a href="tel:+37126335327" id="mobile">+371 26 335 327</a></p>
+					
+				</div>
+			</div>
+			<div class="col-xs-3 col-xs-offset-3 contactMe">
+				<form class="form" id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbwxoPg9fKKYb8_5mrMaBtyjC0aFCwv6zVjyuOh6dAePO8Oykarx/exec">
 
+						<div class="form-group">
+							<h3>Message me</h3>
+							<label>Your email:</label>
+							<input type="email" name="email" id="email" required="required" class="form-control">
+							<label>Message:</label>
+							<textarea rows="4" cols="20" name="message" id="message" required="required" class="form-control"></textarea>
+						</div>
+						<div class="form-group">
+							<button type="submit" name="submit" class="btn btn-default">
+								<i class="fa fa-paper-plane" aria-hidden="true"></i> &nbsp;<strong>Send</strong> 
+							</button>
+				</form>
+				<div style="display: none;" id="thankyou_message">
+					<h3>Thank you for your message. Will revert back to you soon!</h3>
 				</div>
 			</div>
 		</div>
@@ -529,7 +548,7 @@
 			</a>
 		</div>				
 <!--=================================================================================== -->
-
+<script data-cfasync="false" type="text/javascript" src="js/form-submission-handler.js"></script>
 </body>
 
 

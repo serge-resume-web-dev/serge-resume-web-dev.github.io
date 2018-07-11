@@ -155,7 +155,16 @@ footer {
 	      }
 	    }
     }
+    div.contactMe {
+    	form#gform{
+				h3,label{color: #fff;}
+    	}
+    	div#thankyou_message{
+    		h3{color: #fff;}
+    	}
+    }
 	    
+
 	}
 }
 div#bottom-footer {

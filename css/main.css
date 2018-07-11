@@ -126,6 +126,10 @@ footer {
         footer div#top-footer .diamond .diamond-inner {
           top: 20px;
           left: -5px; } }
+  footer div#top-footer div.contactMe form#gform h3, footer div#top-footer div.contactMe form#gform label {
+    color: #fff; }
+  footer div#top-footer div.contactMe div#thankyou_message h3 {
+    color: #fff; }
 
 div#bottom-footer {
   padding-top: 10px;
