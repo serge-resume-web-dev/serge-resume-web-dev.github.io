@@ -173,8 +173,6 @@ footer {
     		h3{color: #fff;}
     	}
     }
-	    
-
 	}
 }
 div#bottom-footer {
@@ -188,7 +186,50 @@ div#angularJs {
 		background-repeat: no-repeat;
 
 }
+/* ===============Spinner div#flipper css start:=================================*/
+ /* WebKit and Opera browsers */
+  @-webkit-keyframes flipper {
+    from { -webkit-transform: rotateY(0deg);    }
+    to   { -webkit-transform: rotateY(-360deg); }
+  }
 
+  /* all other browsers */
+  @keyframes flipper {
+    from {
+      -ms-transform: rotateY(0deg);
+      -webkit-transform: rotateY(0deg);
+              transform: rotateY(0deg);
+    }
+    to {
+      -ms-transform: rotateY(-360deg);
+      -webkit-transform: rotateY(-360deg);
+              transform: rotateY(-360deg);
+    }
+  }
+	#flip-frame{
+		-webkit-perspective: 1200px;
+		-ms-perspective: 1200px;
+		-webkit-perspective: 1200px;
+	  #flipper{
+			-webkit-animation-name: flipper;
+			-webkit-animation-timing-function: linear;
+			-webkit-animation-iteration-count: infinite;
+			-webkit-animation-duration: 6s;
+
+			animation-name: flipper;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+			animation-duration: 6s;
+
+			-webkit-transform-style: preserve-3d;
+			transform-style: preserve-3d;
+			&:hover{
+				-webkit-animation-play-state: paused;
+    		animation-play-state: paused;
+			}
+	  }
+	}
+/* ===============Spinner div#flipper end======================================*/
 
 /* styling the JS jquery animations etc.*/
 div.back-to-top {  background: none; 
