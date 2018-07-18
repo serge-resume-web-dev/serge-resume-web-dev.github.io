@@ -13,7 +13,7 @@
 					"answer2_c": "Shikoku",
 					"answer2_d": "Kyushu",
 										"right_answer2": "Honshu",
-					"question3": "In what city is the Brandenburg Gate located?", 
+					"question3": "In which city is the Brandenburg Gate located?", 
 					"answer3_a": "Nuremberg",
 					"answer3_b": "Munich",
 					"answer3_c": "Hamburg",
@@ -43,7 +43,7 @@
 	},
 	{
 					"category": "Test C", 
-					"question1": "In what country would you find Mount Kilimanjaro?", 
+					"question1": "In which country would you find Mount Kilimanjaro?", 
 					"answer1_a": "Tanzania",
 					"answer1_b": "Kenya",
 					"answer1_c": "Zimbabwe",
