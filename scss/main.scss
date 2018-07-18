@@ -152,6 +152,12 @@ footer {
 		padding-top: 10px;
 		padding-bottom: 20px;
 	}
+	@include md-screens-plus {
+	/*=======double background for md-screens+ ===========*/
+		background: url('../img/bg-dune2.png'), #124259;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
 	div#top-footer {
 		.diamond{
       margin-left: 200px;

@@ -111,6 +111,12 @@ footer {
     footer {
       padding-top: 10px;
       padding-bottom: 20px; } }
+  @media only screen and (min-width: 1201px) {
+    footer {
+      /*=======double background for md-screens+ ===========*/
+      background: url("../img/bg-dune2.png"), #124259;
+      background-repeat: no-repeat;
+      background-size: cover; } }
   footer div#top-footer .diamond {
     margin-left: 200px;
     width: 300px;
