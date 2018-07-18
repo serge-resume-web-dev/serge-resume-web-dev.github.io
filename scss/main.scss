@@ -82,6 +82,46 @@ section#section3 {
 	background: url('../img/section3background.png');
 	background-size: cover;
 	background-repeat: no-repeat;
+	
+/*=======animation css for md-screens+ ===========*/
+	@include md-screens-plus {
+		height: 100%;
+		width: 100%;
+		background-color: hsla(200,40%,30%,.4);
+		background-image:		
+			url('../img/bg-clouds.png'), 
+			url('../img/section3background.png');
+			
+		background-repeat: repeat-x ;
+		background-position: 
+			10% 0,
+			0 100%;
+			
+		background-size: 
+			25000px,
+			cover;
+			
+		-webkit-animation: 50s para infinite linear;
+		        animation: 50s para infinite linear;
+		@-webkit-keyframes para {
+			100% {
+				background-position: 
+					-15000px 20%,
+					0 100%;					
+			}
+		}
+
+		@keyframes para {
+			100% {
+				background-position: 
+					-5000px 20%,
+					0 100%;					
+			}
+		}
+	}
+/*============ End animation css for md-screens+ ===============*/
+
+
 	div.heading{
 		color: $blue-marine;
 		h2{

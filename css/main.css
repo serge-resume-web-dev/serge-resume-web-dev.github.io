@@ -67,7 +67,26 @@ section#section3 {
   background-color: #c0c1c6;
   background: url("../img/section3background.png");
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  /*=======animation css for md-screens+ ===========*/
+  /*============ End animation css for md-screens+ ===============*/ }
+  @media only screen and (min-width: 1201px) {
+    section#section3 {
+      height: 100%;
+      width: 100%;
+      background-color: rgba(46, 87, 107, 0.4);
+      background-image: url("../img/bg-clouds.png"), url("../img/section3background.png");
+      background-repeat: repeat-x;
+      background-position: 10% 0, 0 100%;
+      background-size: 25000px, cover;
+      -webkit-animation: 50s para infinite linear;
+      animation: 50s para infinite linear; }
+    @-webkit-keyframes para {
+      100% {
+        background-position: -15000px 20%, 0 100%; } }
+    @keyframes para {
+      100% {
+        background-position: -5000px 20%, 0 100%; } } }
   section#section3 div.heading {
     color: #124259;
     padding-bottom: 50px; }
