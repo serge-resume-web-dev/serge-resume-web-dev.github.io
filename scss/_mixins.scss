@@ -45,3 +45,26 @@
         @content;
     }
 }
+
+// border overlay mixin for image containers:
+// container div must have set position relative:
+@mixin  border-inset-overlay {
+    &:before{
+        content: '';
+        display: block;
+        position: absolute;
+        top: 1px; bottom: 1px; left: 1px; right: 1px;
+        box-shadow: 0 3px 8px rgba(0 ,0, 0, 0.05);
+        border-radius: 4px;
+        z-index: -1;
+    }
+    &:after{
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0px; bottom: 0px; left: 0px; right: 0px;
+        border: 1px solid rgba(0 ,0, 0, 0.1);
+        border-radius: 4px;
+        box-shadow: inset 0 0 1px rgba(255 , 255, 255, 0.5);
+    }
+}
